@@ -1,0 +1,122 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif; /* Fonte mais limpa e moderna */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  /* Container do evento */
+  .add-event-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #5033A1;
+    font-size: 2em;
+    margin-top: 40px;
+  }
+  
+  /* Estilos para os inputs */
+  .event-input {
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+  }
+  
+  button {
+    padding: 12px 20px;
+    color: white;
+    background-color: #27CDF2;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0A7ABF;
+  }
+  
+  /* Estilos para a lista de eventos */
+  .event-list {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .event-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #27CDF2;
+  }
+  
+  .event-card h3 {
+    color: #5033A1;
+    font-size: 1.6em;
+    margin: 0 0 10px 0;
+  }
+  
+  .event-card p {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .event-actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .event-actions i {
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .event-actions i:hover {
+    color: #0A7ABF;
+  }
+  
+  /* Alinhar as ações de editar e excluir */
+  .edit-icon {
+    color: #27CDF2;
+  }
+  
+  .delete-icon {
+    color: #FF6347;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .add-event-container, .event-list {
+      padding: 20px;
+    }
+  
+    .event-input {
+      font-size: 1em;
+    }
+  
+    button {
+      font-size: 1em;
+    }
+  }
+  

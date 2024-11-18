@@ -1,0 +1,98 @@
+/* Estilos gerais para a página de locais */
+h1 {
+    text-align: center;
+    color: #6034bf; /* Cor do título */
+    font-size: 2em; /* Tamanho do título */
+    margin-top: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Container principal para centralizar o conteúdo */
+  .main-container {
+    display: flex;
+    justify-content: flex-start; /* Alinha os itens ao início */
+    padding: 20px;
+    margin-left: 220px; /* Ajuste para compensar a largura da sidebar */
+    max-width: calc(100% - 220px); /* Limita o conteúdo ao lado da sidebar */
+  }
+  
+  /* Estilo para a barra de pesquisa */
+  .search-bar {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 20px;
+    margin: 20px auto;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
+    display: block;
+    text-align: center;
+  }
+  
+  /* Estilo da barra de pesquisa quando estiver em foco */
+  .search-bar:focus {
+    outline: none;
+    border-color: #6034bf;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(96, 52, 191, 0.2);
+  }
+  
+  /* Lista de locais */
+  .location-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Grid responsivo */
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px; /* Limita o tamanho da grid */
+  }
+  
+  /* Cartão de local */
+  .location-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para destacar o cartão */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Efeito de hover no cartão de local */
+  .location-card:hover {
+    transform: translateY(-5px); /* Eleva o cartão ligeiramente */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra mais intensa no hover */
+  }
+  
+  /* Título do local */
+  .location-card h3 {
+    font-size: 1.5em;
+    color: #0a7abf;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* Descrição do esporte */
+  .location-card p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .search-bar {
+      width: 80%; /* Aumenta a largura da barra de busca em telas menores */
+    }
+  
+    /* Ajuste para a barra de pesquisa em telas pequenas */
+    .main-container {
+      margin-left: 0; /* Remove o espaço da sidebar */
+      max-width: 100%;
+    }
+  }
+  

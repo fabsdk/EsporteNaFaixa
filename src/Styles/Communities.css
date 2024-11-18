@@ -1,0 +1,101 @@
+.community-post button {
+    padding: 8px 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    width: auto;
+    max-width: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 3.5em;
+    color: #6034bf;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  
+  .community-post button .fa-edit,
+  .community-post button .fa-trash-alt {
+    margin-right: 8px;
+  }
+  
+  /* Estilos para os ícones de editar e excluir */
+  .post-actions {
+    display: flex;
+    justify-content: flex-end; /* Alinha os ícones à direita */
+    gap: 10px; /* Espaço entre os ícones */
+  }
+  
+  .post-actions i {
+    font-size: 1.5em; /* Tamanho do ícone */
+    cursor: pointer;
+    color: #6034bf; /* Cor do ícone */
+  }
+  
+  .post-actions i:hover {
+    color: #4738a6; /* Cor do ícone ao passar o mouse */
+  }
+
+  /* Estilos para o campo de texto onde o usuário escreve o post */
+.post-input {
+    width: 100%; /* Largura total do container */
+    max-width: 600px; /* Limita a largura máxima */
+    height: 150px; /* Define uma altura confortável para digitar */
+    padding: 12px; /* Espaço interno para o texto não ficar colado nas bordas */
+    font-size: 1.2em; /* Tamanho maior da fonte para melhorar a legibilidade */
+    border-radius: 5px; /* Bordas arredondadas */
+    border: 1px solid #ccc; /* Borda suave */
+    background-color: #f9f9f9; /* Fundo claro */
+    color: #333; /* Cor do texto */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para destacar o campo */
+    resize: vertical; /* Permite que o usuário redimensione a área de texto na vertical */
+    margin-top: 20px; /* Espaço acima do campo de texto */
+    display: block; /* Garante que o campo de texto ocupe a largura inteira do container */
+    margin-left: auto;
+    margin-right: auto; /* Centraliza o campo de texto horizontalmente */
+  }
+  
+  /* Estilo para quando o campo de texto estiver focado */
+  .post-input:focus {
+    outline: none; /* Remove o contorno padrão */
+    border-color: #6034bf; /* Cor da borda ao focar */
+    background-color: #ffffff; /* Altere o fundo para branco quando focado */
+    box-shadow: 0 0 10px rgba(96, 52, 191, 0.2); /* Sombra mais forte ao focar */
+  }
+  
+  /* Estilos para o botão de postar */
+  button {
+    padding: 12px 20px; /* Aumenta o padding para deixar o botão mais confortável */
+    color: white;
+    background-color: #27cdf2; /* Cor de fundo do botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 100%; /* Faz o botão ocupar toda a largura disponível do container */
+    max-width: 200px; /* Limita a largura máxima do botão */
+    margin-top: 20px; /* Espaço superior entre o botão e o campo de texto */
+    margin-left: auto;
+    margin-right: auto; /* Centraliza o botão horizontalmente */
+    display: block; /* Faz o botão se comportar como um bloco */
+    text-align: center;
+  }
+  
+  /* Efeito de hover no botão */
+  button:hover {
+    background-color: #0a7abf; /* Muda a cor quando passar o mouse */
+  }
+  
+  /* Adiciona margem superior para a área de postagem */
+  .community-posts {
+    margin-bottom: 20px; /* Adiciona um pequeno espaço entre os posts e a área de escrever */
+  }
+  

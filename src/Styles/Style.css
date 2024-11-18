@@ -1,0 +1,196 @@
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body, html {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    height: 100%;
+    overflow-x: hidden;
+    line-height: 1.6;
+  }
+  
+  .container {
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+  }
+  
+  /* Barra Lateral */
+  .sidebar {
+    width: 20%;
+    min-width: 250px;
+    background-color: #5033A1; /* Suavizei o roxo */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .sidebar h2 {
+    color: #27CDF2;
+    font-size: 2em;
+    margin-bottom: 1em;
+    font-weight: bold;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    width: 100%;
+  }
+  
+  .sidebar li {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  .sidebar a:hover {
+    color: #0A7ABF;
+  }
+  
+  /* Ícones do Menu */
+  .sidebar li svg {
+    fill: white;
+    width: 20px;
+    height: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #0A7ABF;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .event-card, .community-post {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #27CDF2;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .event-card h2 {
+    color: #5033A1;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  
+  .event-card .details {
+    font-size: 1em;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  /* Barra de Pesquisa */
+  .search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #27CDF2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0A7ABF;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .sidebar {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+    }
+    .sidebar.open {
+      transform: translateX(0);
+    }
+    .menu-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 1000;
+      background-color: #27CDF2;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+  
+  /* Esconde o botão de menu em telas maiores */
+@media (min-width: 769px) {
+    .menu-button {
+      display: none;
+    }
+  
+    /* Deixa a sidebar sempre visível */
+    .sidebar {
+      transform: translateX(0);
+      position: relative;
+    }
+  }
+  
+  .post-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.post-title {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.post-description {
+  font-size: 1rem;
+  color: #666;
+}
